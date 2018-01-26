@@ -9,7 +9,7 @@ Out of the box this will install Purencool custom base profile if you want to in
 suitable.
 
 #### Purencool base
-This profile is a stand profile created by Drupal 8 core that has extra modules installed
+This profile is a stand profile created by Drupal 8 core that has extra modules installed and uses Bootstrap as the default theme. 
 
 
 ## Installation
