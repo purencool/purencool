@@ -1,4 +1,4 @@
-# Purencool Drupal 8 initial build
+# Purencool Drupal 8 
 
 This project allows for a base install using Vagrant Beetbox and an initial install of Drupal 8
 
@@ -7,8 +7,6 @@ All the websites modules can be managed by Composer and Git workflow even on sha
 
 ### Requirements
 1. A local installation of Vagrant, Git, and Composer
-
-
 
 
 ### Installation
