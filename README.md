@@ -9,11 +9,11 @@ Out of the box this will install Purencool custom base profile if you want to in
 suitable.
 
 #### Purencool base
-This profile is a stand profile created by Drupal 8 core that has extra modules installed and uses Bootstrap as the default theme. 
+This profile is a stand profile created by Drupal 8 core that has extra modules installed and uses Bootstrap as the default theme. We have remove comments as they are not needed all the time. 
 
 
 ## Installation
-Installation is relative easy and in you can have a drupal website ready to go in no time just follow the  instuctions. 
+Installation is relative easy and in you can have a drupal website ready in no time just follow the instuctions. 
 
 #### Local developer requirements
 To get a local installation of this software your operating system will need the following software installed.  
@@ -21,8 +21,6 @@ To get a local installation of this software your operating system will need the
 1. Vagrant 
 2. Git
 3. Composer
-
-
 
 
 #### Website Installation
@@ -35,5 +33,14 @@ To get a local installation of this software your operating system will need the
 Once it is configured navigate to http://purencool.local/user and the username and password is,   
 username : admin
 password: admin
+
+#### Reinstall a profile
+
+If you want to reinstall a profile it is really easy **(note this will destroy your entire website)** 
+
+1. Navigate to .beetbox/config.yml 
+2. Change profile name by commenting it out
+3. In the websites root directory type vagrant ssh
+4. The type drush si 
 
 
