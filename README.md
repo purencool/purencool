@@ -2,18 +2,17 @@
 
 This project allows for a base install using Vagrant Beetbox and an initial install of Drupal 8
 
-All the websites modules can be managed by Composer and Git workflow even on share hosting for small websites.
+All the websites modules can be managed by Composer and Git workflow even on shared hosting for small websites.
 
 ## Profiles
-Out of the box this will install Purencool custom base profile if you want to install a core profile them navigate to .beetbox/config.yml and comment out purencool_base and change it for one that is more
+Out of the box, this will install Purencool custom base profile if you want to install a core profile them navigate to .beetbox/config.yml and comment out purencool_base and change it for one that is more
 suitable.
 
 #### Purencool base
-This profile is a stand profile created by Drupal 8 core that has extra modules installed and uses Bootstrap as the default theme. We have remove comments as they are not needed all the time. 
-
+This profile is a standard profile created by Drupal 8 core that has extra modules installed and uses Bootstrap as the default theme. We have removed comments as they are not needed all the time.
 
 ## Installation
-Installation is relative easy and in you can have a drupal website ready in no time just follow the instuctions. 
+Installation is relatively easy and in you can have a Drupal website ready in no time just follow the instructions.
 
 #### Local developer requirements
 To get a local installation of this software your operating system will need the following software installed.  
