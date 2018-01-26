@@ -1,3 +1,7 @@
 vagrant_ip: 10.20.1.16
 beet_domain: purencoolinit.local
 beet_root: "{{beet_base}}/public_html"
+drupal_build_composer: yes
+drupal_install_site: yes
+drupal_account_name: admin
+drupal_account_pass: admin
