@@ -1,13 +1,20 @@
-# Purencool Drupal 8 
+# About Purencool
 
 This project allows for a base install using Vagrant Beetbox and an initial install of Drupal 8
 
 All the websites modules can be managed by Composer and Git workflow even on share hosting for small websites.
 
 
-### Requirements
-1. A local installation of Vagrant, Git, and Composer
+### Local developer requirements
+To get a local installation of this software your operating system will need the following software installed.  
 
+1. Vagrant 
+2. Git
+3. Composer
+
+### Change installation profile
+
+Out of the box this will install Purencool custom base profile if you want to install a core profile them navigate to .beetbox/config.yml and comment out purencool_base and change it for one that is more suitable.
 
 ### Installation
 
@@ -16,13 +23,8 @@ All the websites modules can be managed by Composer and Git workflow even on sha
 3. Make the configure file an executable
 4. From the command prompt "bash configure"
 
-This will set up a standard Drupal build with the  
+Once it is configured navigate to http://purencool.local/user and the username and password is,   
 username : admin
 password: admin
-
-### Use case
-Because the Git repo ignores most of the files in its own directory it allows a team to manage a Drupal website on shared hosting using ssh with the configuration outside the live directory.
-
-
 
 
