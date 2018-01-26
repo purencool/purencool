@@ -1,0 +1,7 @@
+#!/bin/bash
+# Install build
+echo "Installing Composer template drupal project using composer"
+composer update
+echo "Installing Vagrantbox"
+vagrant up
+

@@ -1,6 +1,6 @@
 # Purencool init
 
-This project allows for a base install using vagrant beetbox and an initial install of Drupal.
+This project allows for a base install using vagrant beetbox and an initial install of Drupal 8.
 
 ### Requirements
 1. A local installation of vagrant, git, and composer
