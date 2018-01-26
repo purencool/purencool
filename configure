@@ -1,0 +1,12 @@
+#!/bin/bash
+# Install build
+echo "Installing Composer template drupal project using composer"
+composer update
+
+echo "Install development files"
+cp ./.install/.install_files/development.services.yml  ./public_html/sites/development.services.yml
+cp ./.install/.install_files/settings.local.php        ./public_html/sites/default/settings.local.php
+
+echo "Installing Vagrantbox"
+vagrant up
+

@@ -15,7 +15,8 @@ All the websites modules can be managed by Composer and Git workflow even on sha
 
 1. Clone master branch of this repo 
 2. From the command line navigate cloned repo
-3. Make the .install an executable file then bash .install
+3. Make the configure file an executable
+4. From the command prompt "bash configure"
 
 This will set up a standard Drupal build with the  
 username : admin
