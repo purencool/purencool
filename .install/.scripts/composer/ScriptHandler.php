@@ -68,7 +68,7 @@ class ScriptHandler {
 
 		// Move purencool features out of vendor directory
 		if ($fs->exists($drupalRoot . '/vendor/purencool/purencool_features')) {
-			print "Purencool makes it look like magic !!!!!\r\n";
+			print "\033[31m Purencool makes it look like magic !!!!! \033[0m  \r\n";
 			$fs->mkdir($drupalRoot . '/modules/features', 0775);
 			$target = $drupalRoot . '/modules/features';
 			$directoryIterator = new \RecursiveDirectoryIterator($drupalRoot . '/vendor/purencool/purencool_features', \RecursiveDirectoryIterator::SKIP_DOTS);
