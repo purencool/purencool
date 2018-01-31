@@ -1,6 +1,7 @@
 vagrant_ip: 10.20.1.16
 beet_domain: purencool.local
 beet_root: "{{beet_base}}/public_html"
+php_version: "7.1"
 drupal_build_composer: yes
 drupal_install_site: yes
 #drupal_install_profile: standard

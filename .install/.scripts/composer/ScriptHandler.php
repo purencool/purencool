@@ -65,7 +65,26 @@ class ScriptHandler {
       umask($oldmask);
       $event->getIO()->write("Create a sites/default/files directory with chmod 0777");
     }
-  }
+
+		// Move purencool features out of vendor directory
+		if ($fs->exists($drupalRoot . '/vendor/purencool/purencool_features')) {
+			print "Purencool makes it look like magic !!!!!\r\n";
+			$fs->mkdir($drupalRoot . '/modules/features', 0775);
+			$target = $drupalRoot . '/modules/features';
+			$directoryIterator = new \RecursiveDirectoryIterator($drupalRoot . '/vendor/purencool/purencool_features', \RecursiveDirectoryIterator::SKIP_DOTS);
+			$iterator = new \RecursiveIteratorIterator($directoryIterator, \RecursiveIteratorIterator::SELF_FIRST);
+			foreach ($iterator as $item) {
+				if ($item->isDir()) {
+					$targetDir = $target . DIRECTORY_SEPARATOR . $iterator->getSubPathName();
+					$fs->mkdir($targetDir);
+				}
+				else {
+					$targetFilename = $target . DIRECTORY_SEPARATOR . $iterator->getSubPathName();
+					$fs->copy($item, $targetFilename);
+				}
+			}
+		}
+	}
 
   /**
    * Checks if the installed version of Composer is compatible.

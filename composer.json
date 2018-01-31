@@ -17,6 +17,7 @@
 		"drupal/core": "~8.4",
 		"drush/drush": "^9.0.0",
 		"purencool/purencool_base": "dev-master",
+		"purencool/purencool_features": "dev-master",
 		"webflo/drupal-finder": "^1.0.0",
 		"webmozart/path-util": "^2.3"
 	},
@@ -69,6 +70,10 @@
 		"purencool_base": {
 			"type": "vcs",
 			"url": "https://github.com/purencool/purencool_base"
+		},
+		"purencool_features": {
+			"type": "vcs",
+			"url": "https://github.com/purencool/purencool_features"
 		}
 	},
 	"extra": {

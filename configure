@@ -1,5 +1,11 @@
 #!/bin/bash
 # Install build
+#ACTION=1;
+
+##
+# INSTAll
+##
+#if [ "$ACTION" == "INSTALL" ]; then
 echo "Installing Composer template drupal project using composer"
 composer update
 
@@ -9,4 +15,17 @@ cp ./.install/.install_files/settings.local.php        ./public_html/sites/defau
 
 echo "Installing Vagrantbox"
 vagrant up
+exit;
+#fi
 
+##
+# Uninstall
+##
+#if [ "$ACTION" == "UNINSTALL" ]; then
+
+#exit;
+#fi
+
+#echo "Please type an action you want to perform:";
+#echo "1. configure install";
+#echo "2. configure uninstall";
