@@ -38,10 +38,10 @@ password: admin
 
 If you want to reinstall a profile it is really easy **(note this will destroy your entire website)** 
 
-1. Navigate to .beetbox/config.yml 
+1. Navigate to `.beetbox/config.yml`
 2. Change profile name by commenting it out
-3. In the websites root directory type vagrant ssh
-4. Then type drush si 
+3. In the websites root directory type `vagrant ssh`
+4. Then type `drush si` 
 
 #### Headless Drupal using react example
 There is a number of ways to get react to display a website. One simple way is to copy the React code into a webserver directory. This system has a built in tool to see a React example in action.  
