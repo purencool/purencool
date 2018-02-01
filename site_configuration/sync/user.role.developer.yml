@@ -1,0 +1,11 @@
+uuid: 3b43afa2-872d-48c4-9fe4-1a1454602ad4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PKvkI942DMqbtA1kLzsF3Qxx8yxTDDWRCcmLLuNctgM
+id: developer
+label: Developer
+weight: -7
+is_admin: null
+permissions: {  }
