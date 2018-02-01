@@ -84,6 +84,25 @@ class ScriptHandler {
 				}
 			}
 		}
+
+
+		if ($fs->exists($drupalRoot . '/../react')) {
+			print "\033[31m Move react so that it can be displayed \033[0m  \r\n";
+			$fs->mkdir($drupalRoot . '/react', 0775);
+			$target = $drupalRoot . '/react';
+			$directoryIterator = new \RecursiveDirectoryIterator($drupalRoot . '/../react', \RecursiveDirectoryIterator::SKIP_DOTS);
+			$iterator = new \RecursiveIteratorIterator($directoryIterator, \RecursiveIteratorIterator::SELF_FIRST);
+			foreach ($iterator as $item) {
+				if ($item->isDir()) {
+					$targetDir = $target . DIRECTORY_SEPARATOR . $iterator->getSubPathName();
+					$fs->mkdir($targetDir);
+				}
+				else {
+					$targetFilename = $target . DIRECTORY_SEPARATOR . $iterator->getSubPathName();
+					$fs->copy($item, $targetFilename);
+				}
+			}
+		}
 	}
 
   /**

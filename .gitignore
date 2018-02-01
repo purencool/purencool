@@ -1,9 +1,10 @@
 /*
-!/public_html
+#!/public_html
 !/.gitignore
 !/.gitmodules
 !/.beetbox
 !/.install
+!/react
 !/site_configuration
 !Vagrantfile
 !/README.md
