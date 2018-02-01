@@ -86,5 +86,5 @@ body {
 /* line 5, ../sass/_homepage.scss */
 .events {
   font-style: italic;
-  font-color: #555;
+  color: #555;
 }
