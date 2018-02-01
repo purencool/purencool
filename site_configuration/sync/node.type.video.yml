@@ -1,0 +1,19 @@
+uuid: 32ef38f1-9f08-4349-8cc3-5dcdd5b5240b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: Rq_VZrerPnfvI6Rf9AkioHdwGVRB11CQaS0av3RPjMo
+name: Video
+type: video
+description: 'Online videos you want to show users'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

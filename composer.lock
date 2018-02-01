@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0caddad3888ca5b18712118fde122a4f",
+    "content-hash": "aade7a24b7ed5893144507242aaf3428",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3557,6 +3557,67 @@
             }
         },
         {
+            "name": "drupal/video_embed_field",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/video_embed_field",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "f54d470ef7f863604e51e6ae98cd40ef25de5f79"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/colorbox": "*",
+                "drupal/media_entity": "*",
+                "drupal/media_entity_embeddable_video": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x",
+                    "datestamp": "1510132373",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    },
+                    "package": "Field types"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "jec006",
+                    "homepage": "https://www.drupal.org/user/855980"
+                },
+                {
+                    "name": "plopesc",
+                    "homepage": "https://www.drupal.org/user/282415"
+                }
+            ],
+            "description": "A pluggable field type for storing videos from external video hosts such as Vimeo and YouTube.",
+            "homepage": "https://www.drupal.org/project/video_embed_field",
+            "support": {
+                "source": "http://cgit.drupalcode.org/video_embed_field"
+            }
+        },
+        {
             "name": "drush/drush",
             "version": "9.0.0",
             "source": {
@@ -4722,12 +4783,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/purencool/purencool_base.git",
-                "reference": "b307f37e8aa51fd24fc13e39d433379b9e77994c"
+                "reference": "38223fee6176b8e08182ac9d3ab259d05b542864"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/purencool/purencool_base/zipball/b307f37e8aa51fd24fc13e39d433379b9e77994c",
-                "reference": "b307f37e8aa51fd24fc13e39d433379b9e77994c",
+                "url": "https://api.github.com/repos/purencool/purencool_base/zipball/38223fee6176b8e08182ac9d3ab259d05b542864",
+                "reference": "38223fee6176b8e08182ac9d3ab259d05b542864",
                 "shasum": ""
             },
             "require": {
@@ -4756,7 +4817,8 @@
                 "drupal/simple_sitemap": "*",
                 "drupal/slick": "*",
                 "drupal/social_media": "*",
-                "drupal/token": "*"
+                "drupal/token": "*",
+                "drupal/video_embed_field": "*"
             },
             "type": "drupal-profile",
             "license": [
@@ -4768,7 +4830,38 @@
                 "source": "https://github.com/purencool/purencool_base/tree/master",
                 "issues": "https://github.com/purencool/purencool_base/issues"
             },
-            "time": "2018-01-30T19:29:55+00:00"
+            "time": "2018-02-01T01:44:15+00:00"
+        },
+        {
+            "name": "purencool/purencool_features",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/purencool/purencool_features.git",
+                "reference": "494b4a8a0ad00664b33bfe308b25cf81ecdd4f10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/purencool/purencool_features/zipball/494b4a8a0ad00664b33bfe308b25cf81ecdd4f10",
+                "reference": "494b4a8a0ad00664b33bfe308b25cf81ecdd4f10",
+                "shasum": ""
+            },
+            "type": "drupal-features",
+            "license": [
+                "GPLV3"
+            ],
+            "authors": [
+                {
+                    "name": "purencool",
+                    "email": "purencool@gmail.com"
+                }
+            ],
+            "description": "Custom feature modules that can be used in Drupal 8",
+            "support": {
+                "source": "https://github.com/purencool/purencool_features/tree/master",
+                "issues": "https://github.com/purencool/purencool_features/issues"
+            },
+            "time": "2018-01-31T06:44:44+00:00"
         },
         {
             "name": "sebastian/version",
@@ -5777,16 +5870,16 @@
         },
         {
             "name": "symfony/polyfill-apcu",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-apcu.git",
-                "reference": "04f62674339602def515bff4bc6901fc1d4951e8"
+                "reference": "e8ae2136ddb53dea314df56fcd88e318ab936c00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/04f62674339602def515bff4bc6901fc1d4951e8",
-                "reference": "04f62674339602def515bff4bc6901fc1d4951e8",
+                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/e8ae2136ddb53dea314df56fcd88e318ab936c00",
+                "reference": "e8ae2136ddb53dea314df56fcd88e318ab936c00",
                 "shasum": ""
             },
             "require": {
@@ -5795,7 +5888,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -5829,20 +5922,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-10-11T12:05:26+00:00"
+            "time": "2018-01-30T19:27:44+00:00"
         },
         {
             "name": "symfony/polyfill-iconv",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-iconv.git",
-                "reference": "7a84ccdb8c953ee274c96dd6bde778d873fc824a"
+                "reference": "bd515d8f392730c833bc1ba993a4f598da64fa5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/7a84ccdb8c953ee274c96dd6bde778d873fc824a",
-                "reference": "7a84ccdb8c953ee274c96dd6bde778d873fc824a",
+                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/bd515d8f392730c833bc1ba993a4f598da64fa5b",
+                "reference": "bd515d8f392730c833bc1ba993a4f598da64fa5b",
                 "shasum": ""
             },
             "require": {
@@ -5854,7 +5947,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -5888,20 +5981,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-10-11T12:05:26+00:00"
+            "time": "2018-01-30T19:27:44+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
+                "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
-                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/78be803ce01e55d3491c1397cf1c64beb9c1b63b",
+                "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b",
                 "shasum": ""
             },
             "require": {
@@ -5913,7 +6006,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -5947,7 +6040,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-10-11T12:05:26+00:00"
+            "time": "2018-01-30T19:27:44+00:00"
         },
         {
             "name": "symfony/process",
@@ -8352,7 +8445,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "purencool/purencool_base": 20
+        "purencool/purencool_base": 20,
+        "purencool/purencool_features": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
