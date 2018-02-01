@@ -1,4 +1,4 @@
-# About Purencool
+# Purencool Drupal Profile 
 
 This project allows for a base install using Vagrant Beetbox and an initial install of Drupal 8
 
