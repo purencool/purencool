@@ -43,7 +43,7 @@ If you want to reinstall a profile it is really easy **(note this will destroy y
 3. In the websites root directory type `vagrant ssh`
 4. Then type `drush si` 
 
-#### Headless Drupal using react example
+## Headless Drupal using react example
 There is a number of ways to get react to display a website. One simple way is to copy the React code into a webserver directory. This system has a built in tool to see a React example in action.  
 
 1. Clone master branch of this repo 
