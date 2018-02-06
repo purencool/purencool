@@ -53,4 +53,4 @@ There is a number of ways to get react to display a website. One simple way is t
 5. Checkout react branch by `git checkout headless-drupal-using-react`
 6. Update drupal configuration  http://purencool.local/admin/config/development/configuration 
 7. Go back to the command line `composer update`
-8. In your browser navigate to http://purencool.local/react/
+8. In your browser navigate to http://purencool.local/react/index.html 

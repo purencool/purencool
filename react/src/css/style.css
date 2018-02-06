@@ -88,3 +88,14 @@ body {
   font-style: italic;
   color: #555;
 }
+
+footer {
+  font-size: 8px;
+}
+
+footer span {
+  display: block;
+  width:40px;
+  margin: 0 auto;
+}
+

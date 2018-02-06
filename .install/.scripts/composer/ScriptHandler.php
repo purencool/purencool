@@ -86,11 +86,11 @@ class ScriptHandler {
 		}
 
 
-		if ($fs->exists($drupalRoot . '/../react')) {
+		if ($fs->exists($drupalRoot . '/../react/src')) {
 			print "\033[31m Move react so that it can be displayed \033[0m  \r\n";
 			$fs->mkdir($drupalRoot . '/react', 0775);
 			$target = $drupalRoot . '/react';
-			$directoryIterator = new \RecursiveDirectoryIterator($drupalRoot . '/../react', \RecursiveDirectoryIterator::SKIP_DOTS);
+			$directoryIterator = new \RecursiveDirectoryIterator($drupalRoot . '/../react/src', \RecursiveDirectoryIterator::SKIP_DOTS);
 			$iterator = new \RecursiveIteratorIterator($directoryIterator, \RecursiveIteratorIterator::SELF_FIRST);
 			foreach ($iterator as $item) {
 				if ($item->isDir()) {

@@ -10,13 +10,13 @@
 		}
 	],
 	"require": {
-		"drupal/jsonapi": "*",
-		"drupal/jsonapi_extras": "*",
 		"composer/installers": "^1.2",
 		"cweagans/composer-patches": "^1.6",
 		"drupal-composer/drupal-scaffold": "^2.2",
-		"drupal/console": "^1.0.2",
+		"drupal/console": "~1.0",
 		"drupal/core": "~8.4",
+		"drupal/jsonapi": "*",
+		"drupal/jsonapi_extras": "*",
 		"drush/drush": "^9.0.0",
 		"purencool/purencool_base": "dev-master",
 		"purencool/purencool_features": "dev-master",
