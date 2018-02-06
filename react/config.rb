@@ -8,17 +8,10 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-<<<<<<< HEAD
 css_dir = "src/css"
 sass_dir = "src/sass"
 images_dir = "src/images"
 javascripts_dir = "src/js"
-=======
-css_dir = "css"
-sass_dir = "sass"
-images_dir = "images"
-javascripts_dir = "js"
->>>>>>> 0ee80cb02062e0035f9da13c1bb529c57739a05f
 
 # You can select your preferred output style here (can be overridden via the command line):
 #output_style = :expanded;
