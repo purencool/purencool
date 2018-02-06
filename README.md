@@ -43,14 +43,15 @@ If you want to reinstall a profile it is really easy **(note this will destroy y
 3. In the websites root directory type `vagrant ssh`
 4. Then type `drush si` 
 
-## Headless Drupal using react example
-There is a number of ways to get react to display a website. One simple way is to copy the React code into a webserver directory. This system has a built in tool to see a React example in action.  
+## Headless Drupal using React example
+There is a number of ways to get React to display a website. One simple way is to copy the React code into a webserver directory. This system has a built-in tool to see a React example in action.  
 
 1. Clone master branch of this repo 
 2. From the command line navigate cloned repo
 3. Make the `configure` file an executable
 4. From the command prompt `bash configure`
-5. Checkout react branch by `git checkout headless-drupal-using-react`
-6. Update drupal configuration  http://purencool.local/admin/config/development/configuration 
+5. Checkout React branch by `git checkout headless-drupal-using-react`
+6. Update Drupal configuration  http://purencool.local/admin/config/development/configuration 
 7. Go back to the command line `composer update`
 8. In your browser navigate to http://purencool.local/react/index.html 
+
