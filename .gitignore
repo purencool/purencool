@@ -3,6 +3,7 @@
 !/.gitignore
 !/.gitmodules
 !/.beetbox
+!/.docker
 !/.install
 !/react
 !/site_configuration
