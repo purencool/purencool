@@ -3,6 +3,7 @@
 !/.gitignore
 !/.gitmodules
 !/.beetbox
+!/.docker
 !/.install
 !/site_configuration
 !Vagrantfile
