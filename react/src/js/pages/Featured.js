@@ -1,41 +1,41 @@
 import React from "react";
 
 import Article from "../components/Article";
-import Helpers from "../utils/helpers";
+import ApiCalls from "../utils/ApiCalls";
 
 export default class Featured extends React.Component {
-  
+  constructor() {
+    super();
+    this.state = {
+      data: null,
+      newData: null
+   }
+  }
   
   /**
    *  Received request from server
    */
   componentDidMount(){
-    Helpers.serverData()
+    ApiCalls.articleData()
       .then(function(data){
+        const newData = data.map(c => {
+          return  c.attributes.title;
+        })
+        const addElement = newData.map((title, i) => <Article key={i} title={title}/> );
+        const newState = Object.assign({}, this.state, {
+           newData: addElement
+        });
+
+     
+        this.setState(newState);
       }.bind(this));
   }
-  
   
   /**
    *  Render request
    */
   render() {
-    this.componentDidMount();
-    const Articles = [
-      "Some Article",
-      "Some Other Article",
-      "Yet Another Article",
-      "Still More",
-      "Some Article",
-      "Some Other Article",
-      "Yet Another Article",
-      "Still More",
-      "Some Article",
-      "Some Other Article",
-      "Yet Another Article",
-      "Still More",
-    ].map((title, i) => <Article key={i} title={title}/> );
-
+    const Articles = this.state.newData
     return (
         <div class="row">{Articles}</div>
     );
