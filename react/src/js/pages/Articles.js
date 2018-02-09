@@ -7,13 +7,13 @@ export default class Articles extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: null,
       newData: null
    }
   }
   
   /**
-   *  Received request from server
+   *  Received request from server add it to 
+   *  react component so that it can be rendered
    */
   componentDidMount(){
     ApiCalls.articleData()
@@ -25,8 +25,6 @@ export default class Articles extends React.Component {
         const newState = Object.assign({}, this.state, {
            newData: addElement
         });
-
-     
         this.setState(newState);
       }.bind(this));
   }

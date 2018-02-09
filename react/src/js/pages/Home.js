@@ -12,7 +12,9 @@ export default class Home extends React.Component {
   }
   
   /**
-   *  Received request from server
+   *  Received request from server this is going to 
+   *  display the content from the home page
+   *  @todo build custom page request 
    */
   componentDidMount(){
     /*
