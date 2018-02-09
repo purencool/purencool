@@ -1,9 +1,8 @@
 import React from "react";
 
-import Article from "../components/Article";
 import ApiCalls from "../utils/ApiCalls";
 
-export default class Featured extends React.Component {
+export default class Home extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -16,6 +15,7 @@ export default class Featured extends React.Component {
    *  Received request from server
    */
   componentDidMount(){
+    /*
     ApiCalls.articleData()
       .then(function(data){
         const newData = data.map(c => {
@@ -29,15 +29,16 @@ export default class Featured extends React.Component {
      
         this.setState(newState);
       }.bind(this));
+      */
   }
   
   /**
    *  Render request
    */
   render() {
-    const Articles = this.state.newData
+    //const  = this.state.newData
     return (
-        <div class="row">{Articles}</div>
+        <div class="row">Testing</div>
     );
   }
 }

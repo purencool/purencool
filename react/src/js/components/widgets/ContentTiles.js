@@ -1,13 +1,10 @@
 import React from "react";
 
 /**
- *  The article component is a template to display 
+ *  This component is a template to display 
  *  widgets of information
- * 
- *  @todo This will be renamed in the future to a 
- *  more generic name
  */
-export default class Article extends React.Component {
+export default class ContentTiles extends React.Component {
   render() {
     const { title } = this.props;
     return (
