@@ -1,9 +1,9 @@
 import React from "react";
 
-import ContentTiles from "../components/widgets/ContentTiles";
+import ContentVideo from "../components/widgets/ContentVideo";
 import ApiCalls from "../utils/ApiCalls";
 
-export default class Articles extends React.Component {
+export default class Video extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -12,31 +12,36 @@ export default class Articles extends React.Component {
   }
   
   /**
-   *  Received request from server add it to 
-   *  react component so that it can be rendered
+   *  Received request from server this is going to 
+   *  display the content from the home page
+   *  @todo build custom page request 
    */
   componentDidMount(){
-    ApiCalls.articleData()
+    ApiCalls.videoData()
       .then(function(data){
         const newData = data.map(c => {
-          return  c.attributes.title;
+          return  c.attributes.field_video;
+        
         })
         console.log(data);
-        const addElement = newData.map((title, i) => <ContentTiles key={i} title={title}/> );
+        const addElement = newData.map((video, i) => <ContentVideo key={i} video={video}/> );
         const newState = Object.assign({}, this.state, {
            newData: addElement
         });
+
+     
         this.setState(newState);
       }.bind(this));
   }
   
+
   /**
    *  Render request
    */
   render() {
-    const contentTiles = this.state.newData
+    const contentVideo = this.state.newData
     return (
-        <div class="row">{contentTiles}</div>
+        <div class="row">{contentVideo}</div>
     );
   }
 }

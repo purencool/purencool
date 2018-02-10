@@ -25,7 +25,10 @@ function getPages(id){
 /**
  * 
  */
-function getVideo(id){
+function getVideo(id = ''){
+  if(id !== ''){
+    return axios.get('http://purencool.local/jsonapi/node/video/'+id);
+  }
   return axios.get('http://purencool.local/jsonapi/node/video');
 }
 
@@ -55,8 +58,7 @@ var ApiCalls = {
   videoData: function(id){
     return axios.all([getVideo(id)])
       .then(function(arr){
-        console.log(arr);
-        return arr;
+        return arr[0].data.data;
       })
       .catch(function (error) {
         console.log(error);
